@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Thymeleaf</title>
+</head>
+<body>
+	<!--<h1 th:text="'hello,' +${Displaykaronaam}"></h1>-->
+    <h2>Student Registration</h2>
+    <form action="#" method="post" th:object="${studentEntry}">
+        <label for="name" class="label">Name</label>
+        <input th:field="*{firstName}" type="text" class="input"><br><br>
+        <label for="" class="label">SurName</label>
+        <input th:field="*{lastName}" type="text" class="input"><br>
+        <input type="hidden" name="">
+        <input type="submit">
+    </form>
+</body>
+</html>
